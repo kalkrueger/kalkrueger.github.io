@@ -5,6 +5,6 @@
 <h2 style="text-align:center;">Software</h2>
 <h3>Current Projects</h3>
 
-<p style="text-align:center;">
-   <nav> <a href="/about">About</a></nav>
+<p>
+   <nav style="text-align:center;"> <a href="/about">About</a></nav>
 </p>
