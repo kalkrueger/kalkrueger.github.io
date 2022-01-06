@@ -1,7 +1,6 @@
 ---
-layout: jekyll-theme-modernist
 title: "About Me"
 permalink: /about/
 ---
 
-This is the about page.
+This is the about page
