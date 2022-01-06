@@ -1,4 +1,4 @@
-<img src="./images.jh.jpeg" alt="Jackson" width="200" height="200">
+<img src="./images/jh.jpeg" alt="Jackson" width="200" height="200">
 <h2>Software/<h2>
 
 <h3>Current Projects</h3>
