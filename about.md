@@ -3,4 +3,4 @@ title: "About Me"
 permalink: /about/
 ---
 
-This is the about page
+Software Developer located in Bozeman, MT
