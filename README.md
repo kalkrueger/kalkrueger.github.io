@@ -1,5 +1,5 @@
 # Software
 
-<h2>This is where I write all about me</h2>
+<h3>Current Projects</h3>
 
 <nav> <a href="/about">About</a>
