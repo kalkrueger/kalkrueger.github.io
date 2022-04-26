@@ -138,10 +138,6 @@ header {
     padding-right: 5px;
 }
 
-#contact h3 {
-    color: #000000;
-}
-
 #projects>ul {
     -ms-align-items: flex-start;
     align-items: flex-start;
@@ -329,7 +325,7 @@ hr {
     margin-top: 10%;
 }
 
-#avatar:hover {
+#avatar:hover, #avatar:active {
   display: block;
   content: url('../images/jh.png');
   max-width: 250px;
@@ -496,7 +492,14 @@ div>iframe {
 }
 
 #contact h3 {
+    color: #455248;
+    text-align: center;
     margin-bottom: 10px;
+}
+
+#contact a {
+  color: #455248;
+  text-align: center;
 }
 
 #contact ul {
