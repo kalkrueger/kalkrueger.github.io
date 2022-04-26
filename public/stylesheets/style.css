@@ -1,0 +1,683 @@
+@import url('whitespace-reset.css');
+/* General */
+
+html {
+  font-size: 18px;
+  font-family: 'Montserrat', 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  background-color:#b8bad4;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::after{
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+  content: url('../images/jh.png')
+}
+
+#icon-header,
+#intro,
+#intro-photo,
+#intro-text,
+#qmantis,
+#projects,
+#contact,
+.intro-p-1,
+.intro-p-2,
+.intro-p-3,
+#qmantis-buttons-container,
+#qmantis-title-container,
+#qmantis-info-container,
+.qmantis-manage-container {
+  opacity: 0;
+  animation: a .5s cubic-bezier(.64, .94, .23, 1.11);
+  animation-fill-mode: forwards;
+}
+
+
+.intro-p-1 {
+  animation-delay: .2s;
+}
+
+.intro-p-2 {
+  animation-delay: .4s;
+}
+
+.intro-p-3 {
+  animation-delay: .6s;
+}
+
+#contact,
+#projects,
+#qmantis-buttons-container,
+#qmantis-title-container {
+  animation-delay: .6s;
+}
+
+#qmantis-info-container {
+  animation-delay: .8s;
+}
+
+.qmantis-manage-container {
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes a {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes a {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes a {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+*/ html {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+#resume-btn:hover {
+    color: #76B7A7;
+}
+
+header {
+    padding: 15px;
+    position: fixed;
+}
+
+.profile-name {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    font-weight: 900;
+}
+
+#intro>h4>img {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#contact h3 {
+    color: #000000;
+}
+
+#projects>ul {
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    margin-top: 75px;
+}
+#projects img {
+    width: 100%;
+}
+
+h4 {
+    align-items: center;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 35px;
+    justify-content: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h5 {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    margin-bottom: 15px;
+    text-align: center;
+    align-self: center;
+}
+
+a.qmantis {
+    color: #EE5942;
+}
+
+a {
+    color: #260C1A;
+    text-decoration: none;
+}
+
+li {
+    margin: 2%;
+    width: 25%;
+}
+
+section {
+    padding: 100px 10%;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #F6F1E7;
+    width: 15%;
+}
+
+.flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.btn {
+    background: #455248;
+    color: #F6F1E7;
+    max-width: 300px;
+    min-width: 230px;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1rem;
+    box-shadow: 0 0 3px #76B7A7;
+    border-radius: 5px;
+    margin: 7px;
+}
+
+.icon {
+    background-color: #455248;
+    border-radius: 100%;
+    min-width: 34px;
+    padding: 5px;
+    width: 100%;
+}
+
+.btn:hover {
+  background-color: #ee6f57;
+}
+
+.icon:hover {
+    background-color: #ee6f57;
+}
+
+.horz-center {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.other-descript {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.other-projects {
+    border-radius: 5px;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.3));
+}
+
+.vert-center {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#icon-header {
+    position: fixed;
+    z-index: 1;
+    background: #F6F1E7;
+    object-fit: contain;
+    justify-content: flex-end;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    box-shadow: inset 0 -3px 6px rgba(0, 0, 0, 0.15);
+}
+
+#icon-header>a {
+  padding-right: 2%;
+}
+
+
+#qmantis-title {
+  font-family: 'Baloo Bhaijaan 2';
+  font-size: 4rem;
+  color: #EE5942;
+  align-self: center;
+}
+
+.qmantis-logo {
+    height: 200px;
+}
+
+.qmantis-logo, #qmantis-title {
+    display: inline-block;
+    vertical-align: middle;
+    align-self: center;
+}
+
+#logo {
+    margin: 25px;
+    opacity: 0.5;
+    position: fixed;
+    width: 60px;
+}
+
+/* ---------------------------------
+
+               intro
+
+------------------------------------ */
+#intro {
+    align-items: center;
+    justify-content: center;
+}
+
+#avatar {
+    display: block;
+    max-width: 250px;
+    min-width: 200px;
+    object-fit: contain;
+    border-radius: 100%;
+    margin-top: 10%;
+}
+
+#avatar:hover {
+  display: block;
+  content: url('../images/jh.png');
+  max-width: 250px;
+  min-width: 200px;
+  object-fit: contain;
+  border-radius: 100%;
+}
+
+#intro-text>p {
+  text-align: center;
+  max-width: 550px;
+  min-width: 340px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 36px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#intro-photo {
+  padding: 5%;
+}
+
+#intro>p {
+    text-align: center;
+    max-width: 550px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 36px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* ---------------------------------
+
+               #qmantis
+
+------------------------------------ */
+
+#qmantis {
+    background: #F6F1E7;
+    overflow: hidden;
+    justify-content: center;
+    padding-bottom: 0;
+    box-shadow: inset 0 -3px 6px rgba(0, 0, 0, 0.15);
+}
+
+#qmantis-info-container {
+    align-items: center;
+    min-width: 340px;
+}
+
+#qmantis-info-container li {
+  width: 90%;
+  margin: 10px;
+  list-style-type: circle;
+  text-align: left;
+}
+
+#qmantis-buttons-container,
+#qmantis-title-container,
+#qmantis-video-container {
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#qmantis-logo {
+    display: inline-block;
+    align-self: center;
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+}
+
+#qmantis h2 {
+    display: inline-block;
+}
+
+#qmantis-info-container,
+#qmantis-video-container {
+    margin-top: 15px;
+}
+
+#qmantis-info-container>div,
+#qmantis-video-container>div {
+    width: 85%;
+}
+
+#qmantis-info-container>div:first-of-type,
+#qmantis-video-container>div:first-of-type {
+    margin-right: 0;
+}
+
+#qmantis-architecture {
+  display: flex;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+    align-self: center;
+}
+
+#qmantis-buttons-container{
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.managing-apps {
+    max-width: 100%;
+}
+
+div>iframe {
+    max-width: 100%;
+}
+#qmantis-info-container>div {
+  margin-bottom: 20px;
+}
+
+#qmantis-info-container>div:last-of-type,
+#qmantis-video-container>div:last-of-type {
+    margin-left: 2.5%;
+}
+
+#qmantis-video-container div:last-of-type>p {
+    width: 75%;
+}
+
+.qmantis-manage-container {
+    max-width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 50px;
+    border-top: 1px solid #eee;
+}
+
+.qmantis-manage-container a {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/* ---------------------------------
+
+              contact
+
+------------------------------------ */
+
+#resume-logo {
+    cursor: pointer;
+    width: 35px;
+}
+
+#github-logo {
+    cursor: pointer;
+    width: 35px;
+}
+
+#linkedin-logo {
+    cursor: pointer;
+    width: 35px;
+}
+
+#contact {
+    padding-top: 50px;
+    background: #F6F1E7;
+}
+
+#contact h3 {
+    margin-bottom: 10px;
+}
+
+#contact ul {
+    width: 20%;
+}
+
+#contact li {
+    margin: 6%;
+}
+
+/* ---------------------------------
+
+           media queries
+
+------------------------------------ */
+
+@media(max-width: 1100px) {
+    h4 {
+        font-size: 1.1rem;
+    }
+    #logo {
+        margin: 20px;
+        width: 55px;
+    }
+    #projects p {
+        font-size: 0.85rem;
+        line-height: 1.5rem;
+        align-self: center;
+    }
+}
+
+@media(max-width: 920px) {
+    section {
+        padding: 100px 15%;
+    }
+    li {
+        margin-bottom: 100px;
+        width: 100%;
+    }
+    li:last-of-type {
+        margin-bottom: 0;
+    }
+    #projects p {
+        font-size: 1rem;
+        line-height: 1.7rem;
+        text-align: center;
+    }
+    #intro{
+        -ms-align-items: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #projects>ul {
+        -ms-align-items: center;
+        align-items: center;
+        flex-direction: column;
+        width: 75%;
+    }
+    #logo {
+        width: 50px;
+    }
+    #qmantis-info-container,
+    #qmantis-video-container {
+        -ms-align-items: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    #qmantis-info-container>div:first-of-type,
+    #qmantis-video-container>div:first-of-type {
+        margin-right: 0;
+    }
+    #qmantis-info-container>div:last-of-type,
+    #qmantis-video-container>div:last-of-type {
+        margin-left: 2.5%;
+    }
+    #qmantis-info-container>div,
+    #qmantis-video-container>div {
+        width: 90%;
+    }
+    #deploy-command-gif,
+    div>iframe {
+        margin-bottom: 50px;
+    }
+    #contact ul {
+        width: 30%;
+    }
+    #contact li {
+        margin: 8%;
+    }
+}
+
+@media(max-width: 690px) {
+    #qmantis-logo {
+        margin-bottom: 25px;
+        width: 75px;
+    }
+    #qmantis-buttons-container {
+      -ms-align-items: center;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+      border-top: 1px solid #eee;
+    }
+    #qmantis-title-container {
+        -ms-align-items: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #qmantis-logo {
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 570px) {
+    #intro>p {
+        width: 100%;
+    }
+    h1 {
+        font-size: 2.7rem;
+        width: 80vw;
+    }
+    h2 {
+        font-size: 1.9rem;
+    }
+    section {
+        padding: 65px 15%;
+    }
+    #qmantis-info-container {
+        margin-top: 25px;
+    }
+    #qmantis-repo-btn {
+        align-self: center;
+    }
+    #projects>ul {
+        width: 100%;
+    }
+}
+
+@media(max-width: 465px) {
+    #qmantis-info-container>div {
+      width: 100%
+    }
+    #qmantis-logo {
+        width: 60px;
+    }
+    #contact li {
+        margin: 15%;
+    }
+    #projects>ul {
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+  html {
+      font-size: 16px;
+  }
+  h1 {
+      font-size: 2.5rem;
+  }
+  h2 {
+      font-size: 1.7rem;
+  }
+  h3 {
+      font-size: 1.2rem;
+  }
+  #qmantis-repo-btn {
+      width: 180px;
+  }
+  #projects>ul {
+      margin-top: 50px;
+  }
+  #projects li {
+      margin-bottom: 50px;
+      align-items: center;
+  }
+  #projects li:last-of-type {
+      margin-bottom: 0;
+  }
+}
+
+.project-tech {
+  margin-top: 1em;
+  color: #455248;
+  font-weight: bold;
+  word-spacing: 5px;
+}

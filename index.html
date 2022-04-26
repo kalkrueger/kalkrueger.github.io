@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <title>Kal Krueger</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/stylesheets/style.css">
+  <meta name="title" property="og:title" content="Kal Krueger" />
+  <meta name="description" property="og:description"
+    content="software developer Bozeman, Montana" />
+  <meta name="type" property="og:type" content="website" />
+  <meta name="url" property="og:url" content="https://kalkrueger.dev" />
+  <meta name="image" property="og:image" content="public/images/og-icon.png" />
+  <meta name="author" content="Kal Krueger"
+    <!-- ICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
+  <link rel="manifest" href="public/favicons/site.webmanifest">
+  <link rel="mask-icon" href="public/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="public/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#539adb">
+  <meta name="msapplication-config" content="public/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#539adb">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Montserrat:wght@500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section id="icon-header" class="flexbox vert-center">
+    <a href="./resume.pdf" target="_blank">
+      <img class="icon" src="public/images/resume.png" alt="Kal Krueger resume link" id="resume-logo">
+    </a>
+    <a href="https://github.com/kalkrueger" target="_blank">
+      <img class="icon" class="profile" src="public/images/git_hub.png" alt="Kal Krueger github link" id="github-logo">
+    </a>
+    <a href="https://www.linkedin.com/in/kal-krueger-19a960161/" target="_blank">
+      <img class="icon" src="public/images/linked_in.png" alt="Kal Krueger LinkedIn link" id="linkedin-logo">
+    </a>
+  </section>
+  <main>
+    <section id="intro" class="flexbox vert-center">
+      <div id="intro-photo" class="flexbox horz-center">
+        <img id="avatar" src="public/images/headshot.png" alt="Kal Krueger">
+      </div>
+      <div id="intro-text" class="flexbox horz-center">
+        <h1 class="profile-name">Hi, there!</h1>
+        <p class="intro-p-1">I'm Kal, a software engineer current based in Bozeman, Montana. I have experience in JavaScript,
+          Ruby, GraphQL, PostgreSQL, and Docker.</p>
+        <p class="intro-p-2">I recently worked with a great team where I co-created <a class="qmantis"
+            href="https://qmantis.co" target="_blank"><strong>QMantis</strong></a>, an open-source observability tool for
+            GraphQL APIs.</p>
+        <p class="intro-p-3">When I'm not at my desk, you can find me out in the mountains enjoying whatever activity is in season!</p>
+      </div>
+    </section>
+
+    <section id="qmantis" class="flexbox horz-center">
+      <div id="qmantis-title-container" class="flexbox">
+          <h1 id="qmantis-title">QMantis</h1><img class="qmantis-logo" src="public/images/qmantis_logo.png">
+      </div>
+      <div id="qmantis-info-container" class="flexbox horz-center">
+        <div>
+          <a href="https://qmantis.co/">
+            <img id="qmantis-architecture" src="public/images/qmantis-architecture.png"
+              alt="a diagram of the qmantis architecture" />
+          </a>
+        </div>
+        <ul class="flexbox horz-center">
+          <li><a class="qmantis" href="https://qmantis.co/"><strong>QMantis</strong></a> is an open-source observability tool
+            for GraphQL APIs, built with <strong>Node.js</strong>, <strong>OpenTelemetry</strong>, and <strong>TimescaleDB</strong>.
+            It leverages <strong>Docker</strong> for quick and easy deployment.</li>
+          <li><a class="qmantis" href="https://qmantis.co/"><strong>QMantis</strong></a> offers an easy-to-use UI with a pre-configured <strong>Grafana</strong> dashboard
+            designed for monitoring metrics and viewing GraphQL-specific traces.</li>
+          <li><a class="qmantis" href="https://qmantis.co/"><strong>QMantis</strong></a> abstracts away the complexity of generating, processing, exporting, storing, and visualizing telemetry
+            data, making it easy to track errors and analyze an API's performance at the resolver level. It helps engineering
+             teams monitor a GraphQL API's health, allowing them to quickly visualize exactly which requests are performing
+             poorly, even in complex operations.</li>
+        <ul>
+      </div>
+      <div id="qmantis-buttons-container" class="flexbox vert-center">
+        <a class="btn" target="_blank" href="https://qmantis.co/#case-study"><strong>Read the Case Study</strong></a><a class="btn" target="_blank" href="https://qmantis.co/#case-study"><strong>Watch the Talk</strong></a>
+      </div>
+    </section>
+
+    <section id="projects" class="flexbox horz-center">
+      <h2>Additional projects</h2>
+      <ul class="flexbox vert-center">
+        <li>
+          <img class="other-projects" src="public/images/mello.png" alt="Screenshot of Rello application" />
+          <h4>Mello</h4>
+          <p class="other-descript">Clone of Trello-like board app used for task management</p>
+          <p class="project-tech">(Node.js, Express, MongoDB, React, Redux)</p>
+          <a></a>
+        </li>
+        <li>
+          <img class="other-projects" src="public/images/bin_hooked.png" alt="Screenshot of BinHooked application" />
+          <h4>Bin Hooked</h4>
+          <p class="other-descript">RequestBin clone for receiving and debugging webhooks</p>
+          <p class="project-tech">(Node.js, Express, MongoDB, React, NGINX) </p>
+        </li>
+        <li>
+          <img class="other-projects" src="public/images/airline.png" alt="Screenshot of Airline Routes application" />
+          <h4>Flight Finder</h4>
+          <p class="other-descript">React app allowing users to find flights by airline and airport</p>
+          <p class="project-tech">(React)</p>
+          <a></a>
+        </li>
+      </ul>
+    </section>
+    <section id="contact" class="flexbox horz-center">
+      <h3>I'd Love to Hear from You!</h3>
+      <h4><a href="mailto:kkrueger19@gmai.com">kkrueger19@gmail.com</a></h4>
+      <ul class="flexbox vert-center">
+        <li>
+          <a href="./resume.pdf" target="_blank">
+            <img class="icon" src="public/images/resume.png" alt="Kal Krueger resume link">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/kalkrueger" target="_blank">
+            <img class="icon" src="public/images/git_hub.png" alt="Kal Krueger github link">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kal-krueger-19a960161/" target="_blank">
+            <img class="icon" src="public/images/linked_in.png" alt="Kal Krueger LinkedIn link">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+
+</html>
