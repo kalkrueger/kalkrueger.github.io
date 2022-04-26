@@ -151,6 +151,10 @@ header {
     width: 100%;
 }
 
+#projects img:hover {
+  transform: scale(1.25);
+}
+
 h4 {
     align-items: center;
     display: flex;
