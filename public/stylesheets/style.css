@@ -147,7 +147,7 @@ header {
     width: 100%;
 }
 
-#projects img:hover {
+#projects img:hover, #projects img:active {
   transform: scale(1.25);
 }
 
