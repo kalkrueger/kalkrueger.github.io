@@ -318,7 +318,7 @@ hr {
 
 #avatar {
     display: block;
-    max-width: 250px;
+    max-width: 300px;
     min-width: 200px;
     object-fit: contain;
     border-radius: 100%;
@@ -328,7 +328,7 @@ hr {
 #avatar:hover, #avatar:active {
   display: block;
   content: url('../images/jh.png');
-  max-width: 250px;
+  max-width: 300px;
   min-width: 200px;
   object-fit: contain;
   border-radius: 100%;
